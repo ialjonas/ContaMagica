@@ -1,6 +1,7 @@
 
 public class Conta {
 
+	Cliente c=new Cliente(1);
 	private double saldo;
 	private double valor;
 
@@ -13,6 +14,11 @@ public class Conta {
 			System.out.println("Valor inválido");
 		} else {
 			this.saldo = saldo + valor;
+			/**
+			 * A validação da categoria do cliente sera realizada aqui.
+			 */
+			
+			//if (saldo<)
 		}
 	}
 
@@ -20,6 +26,9 @@ public class Conta {
 		if ((valor > saldo) || (valor < 0)) {
 			System.out.println("Valor inválido");
 		} else {
+			/**
+			 * A validação da categoria do cliente sera realizada aqui.
+			 */
 			this.saldo = saldo - valor;
 		}
 	}
