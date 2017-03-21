@@ -7,9 +7,16 @@ public class App {
 		
 		System.out.println("*******************");
 		
-		Conta c=new Conta(-5);
+		Conta c=new Conta();
+		c.depositar(5);
+		System.out.println(c.getSaldo());
 		
-		System.out.println(c.toString());
+		System.out.println("*******************");
+		
+		c.retirar(2);
+		System.out.println(c.getSaldo());
+		
+		
 	}
 
 }
